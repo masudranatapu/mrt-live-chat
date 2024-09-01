@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SocialiteController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -20,3 +21,9 @@ Route::view('profile', 'profile')
     ->name('profile');
 
 require __DIR__.'/auth.php';
+
+
+
+// google login
+Route::get('google/redirect', [SocialiteController::class, 'googleRedirect'])->name('google.redirect');
+Route::get('login/google/callback', [SocialiteController::class, 'googleCallback'])->name('google.callback');
