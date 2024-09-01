@@ -1,6 +1,6 @@
 ## Laravel Real Time Chat (This is only for test => Ethical Den BD)
 
-A simple and clean boilerplate to start a new R with authentication, user, pos and more features. This boilerplate uses the following tools:
+A simple and clean real time chat and Social login . This boilerplate uses the following tools:
 
 -   [Laravel 11.x](https://github.com/laravel/laravel)
 
